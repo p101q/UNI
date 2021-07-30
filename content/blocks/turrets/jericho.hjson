@@ -1,0 +1,120 @@
+{
+type: ItemTurret
+category: turret
+targetAir: false
+rotateSpeed: 1.6
+size: 5
+shots: 8
+inaccuracy: 12
+velocityInaccuracy: 0.15
+reloadTime: 180
+ammoEjectBack: 10
+ammoUseEffect: casing3
+ammoPerShot: 30
+cooldown: 0.05
+restitution: 0.04
+recoilAmount: 10
+coolantUsage: 1.5
+coolantMultiplier: 0.45 
+shootShake: 13
+range: 425
+minRange: 150
+health: 3900
+shootSound: artillery
+ammoTypes: {
+	plastanium: {
+		type: ArtilleryBulletType
+		ammoMultiplier: 1
+		hitEffect: {
+			type: ParticleEffect
+			colorFrom: fffac6
+			colorTo: d8d97f
+			particles: 10
+			cone: 360
+			length: 45
+			baseLength: 0
+			sizeFrom: 6.5
+			sizeTo: 0
+			clip: 45
+		}
+		hitSound: bang
+		lifetime: 70
+		width: 20
+		height: 20
+		speed: 4
+		splashDamageRadius: 100
+		splashDamage: 120
+		backColor: d8d97f
+		frontColor: fffac6
+		smokeEffect: shootBigSmoke2
+		hitShake: 5
+		shootEffect: {
+			type: MultiEffect
+			effects: [
+			{
+				type: WaveEffect
+				lifetime: 25
+				sizeFrom: 0
+				sizeTo: 25
+				strokeFrom: 4
+				strokeTo: 0
+				colorFrom: fffac6
+				colorTo: d8d97f
+			}
+			{
+				type: ParticleEffect
+				colorFrom: fffac6
+				colorTo: d8d97f
+				particles: 7
+				cone: 15
+				length: 60
+				baseLength: 0
+				sizeFrom: 4
+				sizeTo: 0
+			}
+			]
+		}
+		fragBullets: 8
+		fragLifeMin: 0.6
+		fragBullet: {
+			type: ArtilleryBulletType
+			hitEffect: plasticExplosion
+			lifetime: 40
+			width: 15
+			height: 15
+			speed: 2
+			splashDamageRadius: 25
+			splashDamage: 15
+			backColor: d8d97f
+			frontColor: fffac6
+			smokeEffect: shootBigSmoke2
+			hitShake: 2
+			status: blasted
+			statusDuration: 30
+			fragBullets: 8
+			fragCone: 360
+			fragLifeMin: 0.98
+			fragLifeMax: 1.02
+			fragVelocityMin: 0.98
+			fragVelocityMax: 1.02
+			fragBullet: {
+				type: BasicBulletType
+				width: 8
+				height: 8
+				lifetime: 15
+				speed: 2
+				damage: 5
+				shrinkY: 1.1
+			}  
+		}
+	}
+}
+requirements: [
+	copper/1700
+	graphite/780
+	titanium/1000
+	silicon/320
+	plastanium/450
+	surge-alloy/125
+]
+}

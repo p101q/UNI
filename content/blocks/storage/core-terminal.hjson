@@ -1,0 +1,21 @@
+{
+type: CoreBlock
+requirements:[
+	copper/13000
+	lead/13000
+	graphite/6000
+	thorium/6000
+	silicon/8000
+]
+unitType: delta
+health: 11000
+itemCapacity: 18000
+size: 6
+thrusterLength: 7.25
+emitLight: true
+lightRadius: 350
+category: effect
+
+unitCapModifier: 32
+researchCostMultiplier: 0.08
+}

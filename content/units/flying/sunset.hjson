@@ -1,0 +1,132 @@
+{ 
+speed: 0.52
+accel: 0.04
+drag: 0.04
+rotateSpeed: 0.95
+flying: true
+lowAltitude: true
+health: 28000
+engineOffset: 28
+engineSize: 7
+hitSize: 70
+destructibleWreck: false
+armor: 14
+targetFlag: reactor
+commandLimit: 6
+weapons: [
+{
+	name: sunset-beam-weapon
+	shootSound: laserblast
+	chargeSound: lasercharge
+	soundPitchMin: 1
+	top: false
+	mirror: false
+	shake: 12
+	shootY: 5
+	x: 0
+	y: 18.75
+	shootY: 22.75
+	reload: 120
+	recoil: 3
+	cooldownTime: 120
+
+	bullet: {
+		type: LaserBulletType
+		length: 380
+		damage: 675
+		width: 35
+		lifetime: 30
+		sideAngle: 25
+		sideWidth: 2
+		sideLength: 100
+		colors:[
+			ec7458aa, ff9c5a, ffffff
+		]
+	}
+}
+{
+	name: sunset-small-weapon
+	x: 27.5
+	y: 4.5
+	rotateSpeed: 1.8
+	reload: 35
+	shootSound: bang
+	shadow: 7.5
+	rotate: true
+	recoil: 1
+	shake: 1
+
+	bullet: {
+		type: FlakBulletType
+		speed: 5
+		lifetime: 40
+		damage: 45
+		splashDamageRadius: 40
+		splashDamage: 65
+		hitEffect: flakExplosion
+		shootEffect: shootBig
+		collidesGround: true
+		explodeRange: 20
+		fragBullets: 3
+		fragCone: 30
+		fragLifeMin: 0.9
+		fragLifeMax: 1.1
+		shrinkY: 0
+		width: 10
+		height: 10
+		fragBullet: {
+			type: BasicBulletType
+			width: 8
+			height: 8
+			lifetime: 40
+			speed: 4
+			hitEffect: flakExplosion
+			damage: 30
+			shrinkY: 0
+		}
+	}
+}
+{
+	name: sunset-small-weapon
+	x: 22
+	y: -21
+	rotateSpeed: 1.8
+	reload: 30
+	shootSound: bang
+	shadow: 7.5
+	rotate: true
+	recoil: 1
+	shake: 1
+
+	bullet: {
+		type: FlakBulletType
+		speed: 5
+		lifetime: 40
+		damage: 45
+		splashDamageRadius: 40
+		splashDamage: 65
+		hitEffect: flakExplosion
+		shootEffect: shootBig
+		collidesGround: true
+		explodeRange: 20
+		fragBullets: 3
+		fragCone: 30
+		fragLifeMin: 0.9
+		fragLifeMax: 1.1
+		shrinkY: 0
+		width: 10
+		height: 10
+		fragBullet: {
+			type: BasicBulletType
+			width: 8
+			height: 8
+			lifetime: 40
+			speed: 4
+			hitEffect: flakExplosion
+			damage: 30
+			shrinkY: 0
+		}
+	}
+}
+]
+}

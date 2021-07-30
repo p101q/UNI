@@ -1,0 +1,28 @@
+{
+//type: ItemTurret
+category: turret
+targetAir: true
+rotateSpeed: 1.6
+size: 6
+shots: 1
+inaccuracy: 0
+reloadTime: 120
+ammoPerShot: 24
+restitution: 0.04
+coolantUsage: 2.5
+coolantMultiplier: 0.2
+recoilAmount: 14
+shootShake: 13
+shootSound: plasmaboom
+range: 425
+minRange: 75
+health: 3900
+requirements: [
+    copper/2450
+    graphite/900
+    titanium/570
+    silicon/1000
+    surge-alloy/1050
+    phase-fabric/480
+]
+}

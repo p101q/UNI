@@ -1,0 +1,44 @@
+{
+size: 15
+liquidCapacity: 360
+itemCapacity: 9000
+consumes: {
+	power: 58
+	items: {
+		items: [
+		silicon/1450
+		scrap/4500
+		titanium/3150
+		thorium/2200
+		plastanium/1200
+		surge-alloy/950
+		phase-fabric/800
+		]
+	}
+	liquid: {
+		liquid: cryofluid
+		amount: 6
+	}
+}
+constructTime: 16110
+requirements: [
+	lead/5250
+	graphite/3750
+	titanium/3000
+	thorium/1500
+	silicon/3500
+	plastanium/2100
+	phase-fabric/800
+	surge-alloy/1100
+]
+upgrades: [
+	[
+		argide, kagrax
+	]
+	[
+		darkness, tenebrae
+	]
+]
+category: units
+research: hextative-reconstructor
+}

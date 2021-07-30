@@ -1,0 +1,194 @@
+{
+type: legs
+speed: 0.47
+drag: 0.1
+hitSize: 32
+health: 29000
+armor: 14
+lightRadius: 178
+commandLimit: 6
+
+rotateSpeed: 1.7
+
+legCount: 8
+legMoveSpace: 0.7
+legPairOffset: 3
+legLength: 95
+legExtension: -20
+legBaseOffset: 8
+landShake: 1.2
+legSpeed: 0.3
+legLengthScl: 0.90
+rippleScale: 4
+hovering: true
+allowLegStep: true
+buildSpeed: 1
+
+legSplashDamage: 128
+legSplashRange: 60
+
+visualElevation: 1.35
+groundLayer: 75
+
+research: toxopid
+
+weapons: [
+{
+	name: nomix-cannon
+	y: -12.75
+	x: 8.5
+	shootX: -0.75
+	shootY: 5
+	reload: 45
+	shake: 7
+	rotate: false
+	ejectEffect: casing3
+	shootSound: artillery
+	shootEffect: shockwave
+	shadow: 15
+	recoil: 5
+	inaccuracy: 10
+	alternate: false
+	bullet: {
+		type: ArtilleryBulletType
+		hitEffect: sapExplosion
+		lifetime: 90
+		width: 20
+		height: 20
+		speed: 4
+		splashDamageRadius: 60
+		splashDamage: 125
+		backColor: 6d56bf
+		frontColor: bf92f9
+		lightning: 5
+		lightningLength: 10
+		lightningColor: bf92f9
+		smokeEffect: shootBigSmoke2
+		hitShake: 6
+		shootEffect: shockwave
+
+		status: sapped
+		statusDuration: 300
+
+		knockback: 25
+		recoil: 0.5
+
+		fragBullets: 3
+		fragLifeMin: 1
+		fragBullet: {
+			type: ArtilleryBulletType
+			hitEffect: sapExplosion
+			lifetime: 45
+			width: 18
+			height: 18
+			speed: 1
+			splashDamageRadius: 30
+			splashDamage: 35
+			backColor: 6d56bf
+			frontColor: bf92f9
+			smokeEffect: shootBigSmoke2
+			hitShake: 3
+			shootEffect: shockwave
+
+			status: sapped
+			statusDuration: 60
+
+			knockback: 25
+			shrinkY: 0.5
+			shrinkX: 0
+		}
+	}
+}
+{
+	name: nomix-cannon
+	y: -15.25
+	x: 19
+	shootX: -0.75
+	shootY: 5
+	reload: 60
+	shake: 7
+	rotate: false
+	ejectEffect: casing3
+	shootSound: artillery
+	shootEffect: shockwave
+	shadow: 15
+	recoil: 5
+	inaccuracy: 10
+	alternate: false
+	bullet: {
+		type: ArtilleryBulletType
+		hitEffect: sapExplosion
+		lifetime: 90
+		width: 20
+		height: 20
+		speed: 4
+		splashDamageRadius: 60
+		splashDamage: 125
+		backColor: 6d56bf
+		frontColor: bf92f9
+		lightning: 5
+		lightningLength: 10
+		lightningColor: bf92f9
+		smokeEffect: shootBigSmoke2
+		hitShake: 6
+		shootEffect: shockwave
+
+		status: sapped
+		statusDuration: 300
+
+		knockback: 25
+		recoil: 0.5
+
+		fragBullets: 3
+		fragLifeMin: 1
+		fragBullet: {
+			type: ArtilleryBulletType
+			hitEffect: sapExplosion
+			lifetime: 45
+			width: 18
+			height: 18
+			speed: 1
+			splashDamageRadius: 30
+			splashDamage: 35
+			backColor: 6d56bf
+			frontColor: bf92f9
+			smokeEffect: shootBigSmoke2
+			hitShake: 3
+			shootEffect: shockwave
+
+			status: sapped
+			statusDuration: 60
+
+			knockback: 25
+			shrinkY: 0.5
+			shrinkX: 0
+		}
+	}
+}
+{
+	name: nomix-minigun
+	x: 16
+	y: 8
+	rotateSpeed: 1.6
+	reload: 3
+	shootSound: bang
+	shadow: 10
+	rotate: true
+	inaccuracy: 10
+	recoil: 3
+	shootY: 5
+	bullet: {
+		type: BasicBulletType
+		damage: 12
+		width: 10
+		height: 10
+		lifetime: 50
+		speed: 4
+		hitEffect: flakExplosion
+		knockback: 6
+		backColor: 6d56bf
+		frontColor: bf92f9
+	}
+}
+]
+}

@@ -1,0 +1,103 @@
+{
+type: ItemTurret
+category: turret
+targetAir: true
+targetGround: false
+rotateSpeed: 2.7
+size: 5
+alternate: true
+spread: 14
+shots: 2
+inaccuracy: 4
+reloadTime: 10
+ammoUseEffect: casing3Double
+ammoPerShot: 2
+recoilAmount: 3
+shootShake: 2.5
+coolantUsage: 1.3
+coolantMultiplier: 0.5
+range: 350
+health: 3550
+shootSound: bang
+ammoTypes: {
+	surge-alloy: {
+		type: BasicBulletType
+		collidesGround: false
+		ammoMultiplier: 1
+		width: 20
+		height: 35
+		lifetime: 40
+		speed: 8
+		damage: 67
+		frontColor: f3e979
+		backColor: d99f6b
+		status: melting
+		statusDuration: 240
+		knockback: 1
+		lightning: 4
+		lightningLength: 6
+		lightningDamage: 15
+		shootEffect: {
+			type: ParticleEffect
+			colorFrom: f3e979
+			colorTo: d99f6b
+			particles: 15
+			cone: 10
+			length: 200
+			baseLength: 0
+			sizeFrom: 3
+			sizeTo: 0
+		}
+		hitEffect: {
+			type: MultiEffect
+			effects: [
+			{
+				type: WaveEffect
+				lifetime: 20
+				sizeFrom: 0
+				sizeTo: 30
+				strokeFrom: 3
+				strokeTo: 0
+				colorFrom: f3e979
+				colorTo: d99f6b
+			}
+			{
+				type: ParticleEffect
+				colorFrom: f3e979
+				colorTo: d99f6b
+				particles: 5
+				cone: 20
+				length: 30
+				baseLength: 0
+				sizeFrom: 4
+				sizeTo: 0
+			}
+			]
+		}
+		hitSound: laser
+		fragBullets: 2
+		fragCone: 90
+		fragBullet: {
+			type: LaserBulletType
+			length: 80
+			damage: 45
+			width: 15
+			lifetime: 15
+			sideAngle: 0
+			sideWidth: 0
+			sideLength: 0
+			colors: [
+				ecd99f6b, f3e979, ffffff
+			]
+		}
+	}
+}
+requirements: [
+	copper/1300
+	lead/600
+	graphite/600
+	thorium/370
+	plastanium/300
+	surge-alloy/450
+]
+}

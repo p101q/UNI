@@ -1,0 +1,43 @@
+{
+size: 13
+liquidCapacity: 300
+itemCapacity: 6000
+consumes: {
+	power: 58
+	items: {
+		items: [
+		silicon/1300
+		scrap/3000
+		thorium/1850
+		plastanium/1000
+		surge-alloy/800
+		phase-fabric/650
+		]
+	}
+	liquid: {
+		liquid: cryofluid
+		amount: 5
+	}
+}
+constructTime: 13680
+requirements: [
+	lead/5250
+	graphite/3750
+	titanium/3000
+	thorium/1500
+	silicon/3500
+	plastanium/2100
+	phase-fabric/800
+	surge-alloy/1100
+]
+upgrades: [
+	[
+		nomix, argide
+	]
+	[
+		sunset, darkness
+	]
+]
+category: units
+research: pentative-reconstructor
+}

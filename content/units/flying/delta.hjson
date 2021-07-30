@@ -1,0 +1,70 @@
+type: flying
+flying: true
+mineSpeed: 9
+mineTier: 3
+buildSpeed: 1.25
+drag: 0.05
+speed: 3
+rotateSpeed: 10
+accel: 0.12
+itemCapacity: 90
+health: 270
+engineOffset: 9.5
+hitSize: 17
+rotateShooting: false
+lowAltitude: true
+commandLimit: 6
+
+weapons:[
+{
+	name: delta-weapon
+	top: false
+	reload: 20
+	x: 4.75
+	y: -4
+	rotate: true
+	shots: 2
+	shotDelay: 4
+	spacing: 0
+	ejectEffect: casing1
+
+	bullet: {
+		type: BasicBulletType
+		damage: 11
+		speed: 4
+		width: 7
+		height: 9
+		lifetime: 60
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+		buildingDamageMultiplier: 0.01
+	}
+}
+
+{
+	name: delta-mount-weapon
+	top: false
+	reload: 15
+	rotate: true
+	x: 4
+	y: 3.5
+	shots: 2
+	spacing: 2
+	inaccuracy: 3
+	shotDelay: 3
+	ejectEffect: casing1
+
+	bullet: {
+		type: BasicBulletType
+		damage: 11
+		speed: 4
+		width: 6.5
+		height: 11
+		lifetime: 70
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+		buildingDamageMultiplier: 0.01
+		homingPower: 0.04
+	}
+}
+]

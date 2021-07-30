@@ -1,0 +1,98 @@
+type: legs
+drag: 0.1
+speed: 0.6
+hitSize: 30
+health: 3250
+armor: 4
+rotateSpeed: 2.0
+legCount: 6
+legMoveSpace: 1
+legPairOffset: 0
+legLength: 70
+legExtension: -15
+legBaseOffset: 7
+landShake: 1.2
+legLengthScl: 0.91
+rippleScale: 3.5
+legSpeed: 0.25
+buildSpeed: 1
+legSplashDamage: 60
+legSplashRange: 60
+hovering: true
+allowLegStep: true
+visualElevation: 0.95
+commandLimit: 8
+groundLayer: 75
+weapons:[
+{
+	name: router-king-crown
+	x: 0
+	y: 22.75
+	rotate: false
+	mirror: false
+
+	shadow: 24
+
+	shootY: 2
+	recoil: 7
+	reload: 70
+	shots: 6
+	spacing: 10
+	velocityRnd: 0.4
+	inaccuracy: 7
+	shake: 3
+	shootSound: missile
+	xRand: 4
+	shotDelay: 1
+
+	bullet: {
+		type: MissileBulletType
+		homingPower: 0.2
+		width: 10
+		speed: 4
+		height: 10
+		shrinkX: 0
+		shrinkY: 0
+		drag: -0.003
+		homingRange: 100
+		keepVelocity: false
+		splashDamageRadius: 40
+		splashDamage: 55
+		lifetime: 70
+		hitEffect: blastExplosion
+		despawnEffect: blastExplosion
+		weaveScale: 8
+		weaveMag: 2
+	}
+}
+{
+	name: duo-gun
+	rotate: true
+	rotateSpeed: 4
+	mirror: true
+	y: 13.5
+	x: 13
+	shots: 4
+	alternate: true
+	reload: 15
+	shootCone: 15
+	inaccuracy: 2
+	rotateSpeed: 10
+	bullet: standardCopper
+}
+{
+	name: hail-gun
+	rotate: true
+	rotateSpeed: 2
+	mirror: true
+	y: -13.5
+	x: 13
+	reload: 45
+	recoil: 2
+	shots: 5
+	inaccuracy: 1
+	shootCone: 10
+	shootSound: bang
+	bullet: artilleryDense
+}
+]

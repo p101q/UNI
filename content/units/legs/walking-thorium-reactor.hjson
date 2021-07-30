@@ -1,0 +1,45 @@
+type: legs
+drag: 0.1
+speed: 0.6
+hitSize: 21
+health: 3500
+armor: 6
+rotateSpeed: 2.7
+legCount: 6
+legMoveSpace: 1
+legPairOffset: 0
+legLength: 40
+legExtension: -15
+legBaseOffset: 13
+landShake: 1
+legLengthScl: 0.96
+rippleScale: 2
+legSpeed: 0.2
+buildSpeed: 1.2
+legSplashDamage: 32
+legSplashRange: 30
+hovering: true
+allowLegStep: true
+visualElevation: 0.65
+commandLimit: 12
+weapons:[
+{
+	name: non-weapon
+	reload: 24
+	shootCone: 180
+	shootSound: explosionbig
+	shootEffect: nuclearcloud
+	bullet: {
+		type: BombBulletType
+		hitEffect: pulverize
+		lifetime: 10
+		speed: 1
+		splashDamageRadius: 275
+		instantDisappear: true
+		splashDamage: 755
+		killShooter: true
+		hittable: false
+		collidesAir: true
+	}
+}
+]

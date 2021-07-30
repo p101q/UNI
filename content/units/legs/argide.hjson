@@ -1,0 +1,145 @@
+{
+type: legs
+speed: 0.44
+drag: 0.1
+hitSize: 40
+health: 36000
+armor: 15
+lightRadius: 194
+commandLimit: 5
+
+rotateSpeed: 1.5
+
+legCount: 8
+legMoveSpace: 0.6
+legPairOffset: 3
+legLength: 115
+legExtension: -25
+legBaseOffset: 8
+landShake: 1.4
+legSpeed: 0.3
+legLengthScl: 0.87
+rippleScale: 5
+hovering: true
+allowLegStep: true
+buildSpeed: 1
+
+legSplashDamage: 176
+legSplashRange: 80
+
+visualElevation: 1.75
+groundLayer: 75
+
+research: nomix
+
+weapons: [
+{
+	name: small-purple-laser-weapon
+	reload: 20
+	rotate: true
+	x: 23
+	y: 12
+	shootSound: sap
+	mirror: true
+	bullet: {
+		type: SapBulletType
+		sapStrength: 2
+		length: 200
+		damage: 75
+		shootEffect: shootSmall
+		hitColor: 6d56bf
+		color: bf92f9
+		despawnEffect: none
+		width: 1
+		lifetime: 30
+		knockback: -25
+	}
+}
+{
+	name: huge-purple-mount
+	x: 24
+	y: -5
+	shootY: 8
+	reload: 60
+	recoil: 3
+	shootSound: laser
+	mirror: true
+	rotate: true
+	rotateSpeed: 2.5
+	shots: 3
+	spacing: 10
+	shake: 6
+	bullet: {
+		type: ShrapnelBulletType
+		length: 120
+		damage: 105
+		width: 13
+		serrationLenScl: 7
+		serrationSpaceOffset: 40
+		serrationFadeOffset: 0
+		serrations: 10
+		serrationWidth: 4
+		fromColor: bf92f9
+		toColor: 6d56bf
+		shootEffect: sparkShoot
+		smokeEffect: sparkShoot
+		lifetime: 30
+	}
+}
+{
+	name: large-purple-cannon
+	y: -15
+	x: 11
+	shootY: 6
+	reload: 105
+	shake: 12
+	rotateSpeed: 1
+	ejectEffect: casing3
+	shootSound: artillery
+	rotate: true
+	shadow: 30
+	recoil: 10
+	bullet: {
+		type: ArtilleryBulletType
+		hitEffect: sapExplosion
+		lifetime: 105
+		width: 25
+		height: 25
+		speed: 3
+		splashDamageRadius: 95
+		splashDamage: 150
+		backColor: 6d56bf
+		frontColor: bf92f9
+		lightning: 10
+		lightningLength: 15
+		lightningDamage: 10
+		lightningColor: bf92f9
+		smokeEffect: shootBigSmoke2
+		hitShake: 10
+		shootEffect: shockwave
+
+		status: sapped
+		statusDuration: 600
+
+		knockback: -99
+		recoil: 1
+
+		fragBullets: 6
+		fragBullet: {
+			type: ShrapnelBulletType
+			length: 80
+			damage: 160
+			width: 13
+			serrations: 0
+			fromColor: bf92f9
+			toColor: 6d56bf
+			shootEffect: sparkShoot
+			smokeEffect: sparkShoot
+			lifetime: 60
+			knockback: 20
+			hitShake: 10
+		}
+	}
+}
+]
+}

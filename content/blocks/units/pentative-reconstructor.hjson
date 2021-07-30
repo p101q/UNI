@@ -1,0 +1,40 @@
+{
+size: 11
+liquidCapacity: 240
+itemCapacity: 3000
+consumes: {
+	power: 38
+	items: {
+		items: [
+		silicon/1150
+		thorium/1500
+		plastanium/800
+		surge-alloy/650
+		phase-fabric/500
+		]
+	}
+	liquid: {
+		liquid: cryofluid
+		amount: 4
+	}
+}
+constructTime: 11250
+requirements: [
+	lead/5250
+	titanium/3000
+	thorium/1500
+	silicon/3500
+	phase-fabric/800
+	surge-alloy/1100
+]
+upgrades: [
+	[
+		toxopid, nomix
+	]
+	[
+		eclipse, sunset
+	]
+]
+category: units
+research: tetrative-reconstructor
+}
