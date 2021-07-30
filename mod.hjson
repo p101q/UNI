@@ -1,0 +1,7 @@
+name: "uni"
+displayName: "[yellow]UNI"
+author: "code: [#f364e9]Qwaka[]\nsprites: [#9effc0]p[#82e0a3]lo[#69c589]lq[]"
+description: "Dagger ate description =("
+version: " [red]alpha[]1.0"
+hidden: false
+minGameVersion: "126"
